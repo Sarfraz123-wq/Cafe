@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Philosopher', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --red:#D31B27;
+    --black:#000000;
+    --white:#FFFFFF;
+    --lime:#2CCF71;
+}
+
+p{
+    margin-bottom: 0;
+}
+button:focus{
+    -webkit-box-shadow: none!important;
+            box-shadow: none!important;
+}
+/* Header Area Start */
+
+.main__area-index{
+    background: url(../images/banner__bg.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 50%  25%;
+    
+}
+
+.main__area-recipe{
+    background: url(../images/recipe__bg.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 50%  0;
+    
+}
+.main__area-recipe-detail{
+    background: url(../images/recipe-details-bg.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.header__area{
+    padding-top: 28px;
+}
+
+.main__menu ul .menu__item:not(:last-child){
+    margin-right: 40px;
+}
+
+.main__menu ul li a{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--black);
+}
+.main__menu ul li.menu__item:hover a,
+.main__menu ul li.menu__item:focus a,
+.main__menu ul li.menu__item a:focus{
+    color: var(--red);
+}
+.main__menu ul li a.active{
+    color: var(--red);
+}
+.navbar-nav{
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.navbar-toggler:focus{
+    -webkit-box-shadow: 0 0 0 0.08rem rgba(211, 27, 39, 0.75)!important;
+            box-shadow: 0 0 0 0.08rem rgba(211, 27, 39, 0.75)!important;
+}
+.navbar-toggler-icon{
+    background-image: url(../images/toggler.svg);
+}
+
+.login__area{
+    margin-left: 144px;
+    visibility:hidden;
+    opacity: 0;
+}
+
+.sign__up-btn{
+    width: 154px;
+    height: 48px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--white);
+    border:1px solid var(--white);
+    border-radius: 33px;
+    margin-right: 12px;
+}
+.sign__in-btn{
+    width: 132px;
+    height: 48px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    background:var(--red);
+    color: var(--white);
+    border-radius: 33px;
+}
+.sign__in-btn:hover,
+.sign__up-btn:hover{
+    color: var(--white);
+}
+
+.notification__profile{
+    display: none;
+    margin-left: 144px;
+}
+
+.notification__dropdown{
+    margin-right: 16px;
+}
+.notification__dropdown-toggler::after{
+    border: 0!important;;
+}
+
+.notification__dropdown-toggler {
+    width:50px;
+    height:50px;
+    background: var(--white);
+    border-radius:50%;
+    padding-top: 10px;
+    padding-left: 16px!important;
+}
+.notification__dropdown .dropdown-menu{
+    width:290px;
+    min-height: 371px;
+    color: var(--white);
+    border-radius: 20px;
+    left: -200px;
+    margin-top: 16px;
+    padding:24px 15px;
+    border:0;
+}
+.notification__dropdown .dropdown-menu::after{
+    content: "";
+    background: url(../images/Pointer.png);
+    background-repeat: no-repeat;
+    top: -12px;
+    position: absolute;
+    right: 50px;
+    z-index: 100;
+    width: 26px;
+    height: 13px;
+}
+
+.notification__dropdown .dropdown-menu li a{
+    display: inline-block;
+    background-color: #FFF7F7;
+    padding: 22px 26px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.notification__dropdown .dropdown-menu li a p.title{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--black);
+}
+.notification__dropdown .dropdown-menu li  a p.description{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #898989;
+}
+.notification__profile-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.profile__dropdown-toggler{
+    background:var(--white);
+    border-radius: 30px;
+    width: 243px;
+    padding:6px;
+}
+.profile__dropdown-toggler.show{
+    border-radius:30px 30px 0 0
+}
+.profile__dropdown-toggler::after{
+    vertical-align: 0.1em!important;
+}
+.profile__dropdown-toggler img{
+    margin-right: 8px;
+}
+.profile__dropdown-toggler span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.profile__dropdown .dropdown-menu {
+    margin-top: 0!important;
+    border: 0;
+    border-radius: 0 0 30px 30px;
+    width: 100%;
+    padding:12px 12px 24px 16px;
+}
+
+.profile__dropdown a{
+    color: var(--black);
+}
+.profile__dropdown a:hover,
+.profile__dropdown a:focus{
+    color: var(--black);
+}
+.profile__dropdown ul li a{
+    font-size: 17px;
+    text-decoration: none;
+}
+.profile__dropdown ul li a img{
+    margin-right: 14px;
+}
+.notification__dropdown ul li:not(:last-child),
+.profile__dropdown ul li:not(:last-child){
+    margin-bottom: 24px;
+}
+/* Header Area End */
+
+/* Banner Area Start */
+
+.banner__title h1{
+    font-family: 'Philosopher', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 78px;
+    line-height: 90px;
+    color: var(--black);
+}
+
+.banner__content p{
+    font-family: 'Philosopher', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: var(--black);
+    
+}
+/* Banner Area End */
+
+/* Food Card Area Start */
+
+.food__card-area{
+    margin-top: 130px;
+    position: relative;
+}
+
+.food__card-area .left__area{
+    width: 42%;
+    height:280px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(20, 22, 35, 0.65)), to(rgba(20, 22, 35, 0)));
+    background: -o-linear-gradient(left, rgba(20, 22, 35, 0.65) 0%, rgba(20, 22, 35, 0) 100%);
+    background: linear-gradient(90deg, rgba(20, 22, 35, 0.65) 0%, rgba(20, 22, 35, 0) 100%);
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+        -ms-transform: matrix(1, 0, 0, -1, 0, 0);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+    position: absolute;
+    top: -54px;
+    left: 0;
+    z-index: 99;
+}
+.food__card-area .right__area{
+    width: 42%;
+    height:280px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(20, 22, 35, 0.65)), to(rgba(20, 22, 35, 0)));
+    background: -o-linear-gradient(left, rgba(20, 22, 35, 0.65) 0%, rgba(20, 22, 35, 0) 100%);
+    background: linear-gradient(90deg, rgba(20, 22, 35, 0.65) 0%, rgba(20, 22, 35, 0) 100%);
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+        -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: absolute;
+    top: -54px;
+    right: 0;
+    z-index: 99;
+}
+
+.food__card-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.food__card{
+    width:192px;
+    height:226px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #B9B9B9;
+    border-radius: 16px;
+    padding:24px;
+    position: relative;
+}
+.food__card.active{
+    -webkit-transform:scale(1.2);
+        -ms-transform:scale(1.2);
+            transform:scale(1.2);
+    top:-22px;
+}
+.food__card-content p{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 18px;
+    margin-top: 64px;
+}
+.food__card-content img{
+    position:absolute;
+    top: -84px;
+    left:50%;
+    -webkit-transform: translateX(-50%) scale(1.2);
+        -ms-transform: translateX(-50%) scale(1.2);
+            transform: translateX(-50%) scale(1.2);
+}
+.food__card-content a{
+    display: inline-block;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    border-radius: 24px;
+}
+
+/* Spinner Area */
+
+.spinner__area{
+    padding-top: 40px;
+}
+.spinner__wrapper{
+    text-align: center;
+}
+
+.spinner_btn{
+    font-family: 'Philosopher',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    background: var(--black);
+    color: var(--white);
+    width:101px;
+    height:101px;
+    border-radius: 50%;
+}
+.spinner_btn:hover{
+    color: var(--white);
+}
+
+.popover{
+    border-radius: 15px!important;
+    width: 100%;
+    max-width: 360px;
+    height:160px;
+    border: 0;
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+.popover[data-popper-placement="right"]{
+    top: 64px!important;
+}
+.popover[data-popper-placement="right"] .popover-arrow{
+    -webkit-transform: translate(0px, 12px)!important;
+        -ms-transform: translate(0px, 12px)!important;
+            transform: translate(0px, 12px)!important;
+}
+.popover-body{
+    width: 100%;
+    max-width: 360px;
+    height: 160px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 41px 53px;
+}
+.popover__content-wrapper {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+}
+.popover__content-wrapper input{
+    width: 20px;
+    height:20px;
+    margin-right: 6px;
+    border-color: var(--lime);
+    margin-bottom: 4px;
+}
+.popover__content-wrapper input:checked{
+    background: var(--lime);
+    border-color: var(--lime);
+}
+.popover__content-wrapper input:focus{
+    -webkit-box-shadow:none;
+            box-shadow:none;
+    border-color: var(--lime);
+}
+.popover__content-wrapper  .form-check{
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.popover__content-wrapper label{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+.popover__left-content .form-check:not(:last-child),
+.popover__right-content .form-check:not(:last-child){
+    margin-bottom: 24px;
+}
+/* Food Card Area End */
+
+/* Footer Area Start */
+
+.footer__area{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.contact__content h3,
+.about__content h3{
+    font-family: 'Philosopher',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: var(--black);
+    margin-bottom: 16px;
+}
+.contact__content p,
+.about__content p{
+    max-width: 560px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: #797979;
+}
+
+.call,
+.email{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.call{
+    margin-bottom: 10px;
+}
+.call p:first-child,
+.email p:first-child{
+    width: 18%;
+}
+.social__link{
+    margin-top: 64px;
+}
+.social__link ul li:not(:last-child){
+    margin-right: 48px;
+}
+.social__link ul li a svg path{
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.social__link ul li:first-child:hover a svg path{
+    fill:#1DA1F2;
+}
+
+.social__link ul li:nth-child(2):hover a svg path{
+    fill:#DB193B;
+}
+
+.social__link ul li:last-child:hover a svg path{
+    fill:#016EE5;
+}
+/* Footer Area End */
+
+/* Food Recipe Area Start*/
+
+.food__recipe-area{
+    padding-top: 72px;
+}
+.food__recipe-wrapper{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.food__recipe-wrapper .food__card{
+    margin-bottom: 96px;
+}
+/* Food Recipe Area End*/
+
+/* Recipe Detail Area */
+.recipe__detail-area{
+    padding-top: 32px;
+}
+.ingredients__list-wrapper img{
+    margin-bottom: 32px;
+}
+.ingredients__list h3{
+    font-family: 'Philosopher',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 130%;
+    color: var(--red);
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 4px;
+}
+.ingredients__list ul{
+    list-style-type:none;
+    padding-left: 0;
+}
+.ingredients__list ul li{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    padding: 20px 36px 24px 36px;
+    border-bottom: 2px dashed var(--black);
+}
+.ingredients__list ul li p{
+    font-family: 'Philosopher',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: var(--white);
+}
+.ingredients__list ul li p:first-child{
+    width: 15%;
+}
+.recipe__description-wrapper .recipe__title{
+    margin-left: -24%;
+    max-width: 50%;
+    margin-bottom: 36px;
+}
+.recipe__description-wrapper .recipe__title h2{
+    font-family: 'Philosopher',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 130%;
+    color: var(--black);
+    text-align: center;
+}
+.recipe__description-wrapper .recipe__title h2 span{
+    color: var(--red);
+}
+
+.recipe__description-wrapper h3{
+    font-family: 'Philosopher',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 130%;
+    color: var(--red);
+    padding-bottom: 4px;
+    position: relative;
+}
+.recipe__description-wrapper h3::after{
+    content: "";
+    display: inline-block;
+    width:100%;
+    max-width:400px;
+    background:var(--black);
+    height:2px;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.recipe__decription{
+    margin-top: 24px;
+    margin-bottom: 64px;
+    padding-right: 24px;
+}
+.recipe__decription h4{
+    font-family: 'Philosopher',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 130%;
+    color:var(--black);
+    margin-bottom: 12px;
+}
+.recipe__decription p{
+    font-family: 'Philosopher',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--white);
+}
+
+/* Recipe Detail Area */

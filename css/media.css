@@ -1,0 +1,835 @@
+/* Extra small Device CSS for all */
+@media  (min-width:320px) and (max-width:575px) {
+
+    .main__area-index{
+        background-position: 45%;
+    }
+
+    /* Header Area Start */
+    .header__area{
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .brand__logo img{
+        width: 100%;
+        max-width: 175px;
+    }
+    .navbar-nav {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+    .main__menu ul .menu__item:not(:last-child){
+        margin-right: 0;
+    }
+    .login__area{
+        margin-left: 0;
+    }
+    .login__area-wrapper{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .main__menu ul li a{
+        font-size:18px;
+    }
+    .sign__up-btn{
+        width:132px;
+        margin-top: 6px;
+        margin-right: 0;
+        margin-bottom: 14px;
+        background: #D31B27;
+        color: #fff;
+        border:1px solid #D31B27;
+        font-size: 16px;
+    }
+    .sign__in-btn{
+        font-size:16px;
+        text-align:left;
+    }
+    .sign__in-btn img,
+    .sign__up-btn img{
+        margin-right: 6px;
+    }
+    .notification__profile{
+        margin-left: 0;
+    }
+    .notification__dropdown{
+        margin-bottom: 12px;
+    }
+    .notification__dropdown .dropdown-menu{
+        border: 1px solid #fae2e2;
+    }
+    .notification__dropdown .dropdown-menu::after{
+        background: url(../images/Pointer-sm.png);
+        right: unset;
+        top: 12%;
+    }
+    .notification__profile-wrapper{
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+                flex-direction:column;
+    }
+    .notification__dropdown-toggler{
+        background: #FFF7F7;
+    }
+    .profile__dropdown-toggler{
+        background: #FFF7F7;
+        padding-left: 6px!important;
+    }
+    .profile__dropdown .dropdown-menu{
+        background: #FFF7F7;
+    }
+    /* Header Area End */
+
+    /* Banner Area Start */
+    .banner__area{
+        padding-top: 24px;
+    }
+    .banner__title{
+        text-align: center;
+    }
+    .banner__title h1{
+        font-size:54px;
+        line-height: 72px;
+    }
+    .banner__content p{
+        text-align:center;
+        font-size:30px;
+    }
+    /* Banner Area End */
+
+    /* Food Card Area Start */
+    .food__card-area .left__area{
+        width:0%;
+    }
+    
+    .food__card-area .right__area{
+        width:0%;
+    }
+    .food__card-wrapper .food__card:not(:nth-child(3)){
+        display: none;
+    }
+    /* Food Card Area End */
+    
+    /* Spinner Area Start */
+    .popover-body{
+        border: 1px solid #fae2e2;
+        padding: 40px 32px;
+    }
+    /* Spinner Area End */
+
+    /* Footer Area Start */
+    .contact__content p,
+    .about__content p{
+        font-size:16px;
+    }
+    .about__content{
+        margin-bottom: 24px;
+    }
+    .social__link{
+        margin-top: 36px;
+    }
+    .social__link ul li:not(:last-child){
+        margin-right: 32px;
+    }
+    /* Footer Area End */
+
+    /* Food Recipe Area Start*/
+    .food__recipe-wrapper{
+        -ms-grid-columns: auto;
+        grid-template-columns: auto;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+    /* Food Recipe Area End*/
+
+    /* Food Recipe Description Start */
+
+    .ingredients__list h3{
+        font-size:30px;
+    }
+    .ingredients__list ul li p{
+        font-size:20px;
+    }
+    .recipe__description-wrapper{
+        margin-top: 24px;
+    }
+    .recipe__description-wrapper .recipe__title{
+        margin-left: 0;
+        max-width:100%;
+    }
+    .recipe__description-wrapper .recipe__title h2{
+        font-size:30px;
+    }
+    .recipe__description-wrapper h3{
+        font-size:30px;
+    }
+    .recipe__decription h4{
+        font-size:24px;
+    }
+    .recipe__decription p{
+        font-size:16px;
+    }
+    .recipe__decription{
+        padding-right: 0;
+        margin-bottom: 32px;
+    }
+    /* Food Recipe Description End */
+
+}
+/* Extra Media Query */
+@media  (min-width:414px) and (max-width:575px){
+ /* Food Recipe Area Start*/
+.food__recipe-wrapper{
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+/* Food Recipe Area End*/
+}
+
+@media (min-width:576px) and (max-width:767px) {
+
+    
+    .main__area-index{
+        background-position: 40%;
+    }
+
+    /* Header Area Start */
+    .header__area{
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .brand__logo img{
+        width: 100%;
+        max-width: 175px;
+    }
+    .navbar-nav {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+    .main__menu ul .menu__item:not(:last-child){
+        margin-right: 0;
+    }
+    .login__area{
+        margin-left: 0;
+    }
+    .login__area-wrapper{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .main__menu ul li a{
+        font-size:18px;
+    }
+    .sign__up-btn{
+        width:132px;
+        margin-top: 6px;
+        margin-right: 0;
+        margin-bottom: 14px;
+        background: #D31B27;
+        color: #fff;
+        border:1px solid #D31B27;
+        font-size: 16px;
+    }
+    .sign__in-btn{
+        font-size:16px;
+        text-align:left;
+    }
+    .sign__in-btn img,
+    .sign__up-btn img{
+        margin-right: 6px;
+    }
+    .notification__profile{
+        margin-left: 0;
+    }
+    .notification__dropdown{
+        margin-bottom: 12px;
+    }
+    .notification__dropdown .dropdown-menu{
+        border: 1px solid #fae2e2;
+    }
+    .notification__dropdown .dropdown-menu::after{
+        background: url(../images/Pointer-sm.png);
+        right: unset;
+        top: 12%;
+    }
+    .notification__profile-wrapper{
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+                flex-direction:column;
+    }
+    .notification__dropdown-toggler{
+        background: #FFF7F7;
+    }
+    .profile__dropdown-toggler{
+        background: #FFF7F7;
+        padding-left: 6px!important;
+    }
+    .profile__dropdown .dropdown-menu{
+        background: #FFF7F7;
+    }
+    /* Header Area End */
+
+    /* Banner Area Start */
+    .banner__area{
+        padding-top: 24px;
+    }
+    .banner__title{
+        width:80%;
+        margin: 0 auto;
+    }
+    .banner__title h1{
+        font-size:54px;
+        line-height: 72px;
+    }
+    .banner__content{
+        width: 75%;
+        margin:0 auto;
+        text-align:center;
+    }
+    .banner__content p{
+        font-size:30px;
+    }
+    /* Banner Area End */
+
+    /* Food Card Area Start */
+    .food__card-area .left__area{
+        width:0%;
+    }
+    
+    .food__card-area .right__area{
+        width:0%;
+    }
+    .food__card-wrapper .food__card:not(:nth-child(3)){
+        display: none;
+    }
+    /* Food Card Area End */
+    
+    /* Spinner Area Start */
+    .popover-body{
+        border: 1px solid #fae2e2;
+        padding: 40px 32px;
+    }
+    /* Spinner Area End */
+
+    /* Footer Area Start */
+    .contact__content p,
+    .about__content p{
+        font-size:16px;
+    }
+    .about__content{
+        margin-bottom: 24px;
+    }
+    .social__link{
+        margin-top: 36px;
+    }
+    .social__link ul li:not(:last-child){
+        margin-right: 32px;
+    }
+    /* Footer Area End */
+
+    /* Food Recipe Area Start*/
+    .food__recipe-wrapper{
+        -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    }
+    /* Food Recipe Area End*/
+
+    /* Food Recipe Description Start */
+
+    .ingredients__list h3{
+        font-size:30px;
+    }
+    .ingredients__list ul li p{
+        font-size:20px;
+    }
+    .recipe__description-wrapper{
+        margin-top: 24px;
+    }
+    .recipe__description-wrapper .recipe__title{
+        margin-left: 0;
+        max-width:100%;
+    }
+    .recipe__description-wrapper .recipe__title h2{
+        font-size:30px;
+    }
+    .recipe__description-wrapper h3{
+        font-size:30px;
+    }
+    .recipe__description-wrapper h3::after{
+        max-width:100%;
+    }
+    .recipe__decription h4{
+        font-size:24px;
+    }
+    .recipe__decription p{
+        font-size:16px;
+    }
+    .recipe__decription{
+        padding-right: 0;
+        margin-bottom: 32px;
+    }
+    /* Food Recipe Description End */
+
+
+}
+@media (min-width:768px) and (max-width:991px) {
+
+    .main__area-index{
+        background-position: 30%;
+    }
+
+    /* Header Area Start */
+    .header__area{
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .brand__logo img{
+        width: 100%;
+        max-width: 175px;
+    }
+    .navbar-nav {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+    .main__menu ul .menu__item:not(:last-child){
+        margin-right: 0;
+    }
+    .login__area{
+        margin-left: 0;
+    }
+    .login__area-wrapper{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .main__menu ul li a{
+        font-size:18px;
+    }
+    .sign__up-btn{
+        width:132px;
+        margin-top: 6px;
+        margin-right: 0;
+        margin-bottom: 14px;
+        background: #D31B27;
+        color: #fff;
+        border:1px solid #D31B27;
+        font-size: 16px;
+    }
+    .sign__in-btn{
+        font-size:16px;
+        text-align:left;
+    }
+    .sign__in-btn img,
+    .sign__up-btn img{
+        margin-right: 6px;
+    }
+    .notification__profile{
+        margin-left: 0;
+    }
+    .notification__dropdown{
+        margin-bottom: 12px;
+    }
+    .notification__dropdown .dropdown-menu{
+        border: 1px solid #fae2e2;
+    }
+    .notification__dropdown .dropdown-menu::after{
+        background: url(../images/Pointer-sm.png);
+        right: unset;
+        top: 12%;
+    }
+    .notification__profile-wrapper{
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+                flex-direction:column;
+    }
+    .notification__dropdown-toggler{
+        background: #FFF7F7;
+    }
+    .profile__dropdown-toggler{
+        background: #FFF7F7;
+        padding-left: 6px!important;
+    }
+    .profile__dropdown .dropdown-menu{
+        background: #FFF7F7;
+    }
+    /* Header Area End */
+
+    /* Banner Area Start */
+    .banner__title h1{
+        font-size:62px;
+        line-height: 76px;
+    }
+    /* Banner Area End */
+
+    /* Food Card Area Start */
+    .food__card-wrapper .food__card:first-child,
+    .food__card-wrapper .food__card:last-child{
+        display: none;
+    }
+    .food__card.active{
+        top: -20px;
+    }
+    .food__card-area .left__area{
+        width: 34%;
+        background: -webkit-gradient(linear, left top, right top, from(rgb(20 22 35 / 30%)), to(rgba(20, 22, 35, 0)));
+        background: -o-linear-gradient(left, rgb(20 22 35 / 30%) 0%, rgba(20, 22, 35, 0) 100%);
+        background: linear-gradient(90deg, rgb(20 22 35 / 30%) 0%, rgba(20, 22, 35, 0) 100%);
+    }
+    .food__card-area .right__area{
+        width: 34%;
+        background: -webkit-gradient(linear, left top, right top, from(rgba(20, 22, 35, 0.28)), to(rgba(20, 22, 35, 0)));
+        background: -o-linear-gradient(left, rgba(20, 22, 35, 0.28) 0%, rgba(20, 22, 35, 0) 100%);
+        background: linear-gradient(90deg, rgba(20, 22, 35, 0.28) 0%, rgba(20, 22, 35, 0) 100%);
+    }
+    .spinner__area{
+        padding-top: 32px;
+    }
+    .spinner_btn{
+        width: 90px;
+        height:90px;
+        font-size:32px;
+    }
+    /* Food Card Area End */
+
+    /* Footer Area Start */
+    .contact__content p, .about__content p{
+        font-size:16px;
+    }
+    .call{
+        margin-bottom: 6px;
+    }
+    .social__link ul li:not(:last-child){
+        margin-right: 40px;
+    }
+    /* Footer Area End */
+
+    /* Food Recipe Area Start*/
+    .food__recipe-wrapper{
+        -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    }
+    /* Food Recipe Area End*/
+
+    /* Food Recipe Description Start*/
+    .ingredients__list h3 {
+        font-size:32px;
+    }
+    .ingredients__list ul li {
+        padding: 16px 20px 20px 24px;
+    }
+    .ingredients__list ul li p{
+        font-size:18px;
+    }
+    .recipe__description-wrapper .recipe__title{
+        max-width:100%;
+        margin-left: 0;
+    }
+    .recipe__description-wrapper .recipe__title h2 {
+        font-size:36px;
+    }
+    .recipe__description-wrapper h3 {
+        font-size:32px;
+    }
+    .recipe__decription h4 {
+        font-size:24px;
+    }
+    .recipe__decription p {
+        font-size:18px;
+    }
+    .recipe__decription{
+        margin-bottom:48px;
+        padding-right: 0;
+    }
+    /* Food Recipe Description End*/
+}
+@media (min-width:992px) and (max-width:1199px) {
+    .main__area-index{
+        background-position: 50%;
+    }
+
+    .main__area-recipe{
+        background-position: 8% 0;
+    }
+
+    /* Header Area Start */
+    .brand__logo img{
+        width:240px;
+    }
+    .main__menu ul .menu__item:not(:last-child){
+        margin-right: 8px;
+    }
+    .login__area{
+        margin-left: 8px;
+    }
+    .main__menu ul li a{
+        font-size:18px;
+    }
+    .sign__up-btn{
+        width: 132px;
+        font-size:16px;
+    }
+    .sign__up-btn img{
+        width:24px;
+    }
+    .sign__in-btn{
+        font-size:16px;
+    }
+    .sign__in-btn img{
+        width: 24px;
+    }
+    /* Header Area End */
+
+    /* Banner Area Start */
+    .banner__title h1{
+        font-size:62px;
+        line-height: 76px;
+    }
+    /* Banner Area End */
+
+    /* Food Card Area Start */
+    .food__card-wrapper .food__card:first-child,
+    .food__card-wrapper .food__card:last-child{
+        display: none;
+    }
+    .food__card-area .left__area{
+        width: 34%;
+        background: -webkit-gradient(linear, left top, right top, from(rgb(20 22 35 / 30%)), to(rgba(20, 22, 35, 0)));
+        background: -o-linear-gradient(left, rgb(20 22 35 / 30%) 0%, rgba(20, 22, 35, 0) 100%);
+        background: linear-gradient(90deg, rgb(20 22 35 / 30%) 0%, rgba(20, 22, 35, 0) 100%);
+    }
+    .food__card-area .right__area{
+        width: 34%;
+        background: -webkit-gradient(linear, left top, right top, from(rgba(20, 22, 35, 0.28)), to(rgba(20, 22, 35, 0)));
+        background: -o-linear-gradient(left, rgba(20, 22, 35, 0.28) 0%, rgba(20, 22, 35, 0) 100%);
+        background: linear-gradient(90deg, rgba(20, 22, 35, 0.28) 0%, rgba(20, 22, 35, 0) 100%);
+    }
+    .spinner__area{
+        padding-top: 32px;
+    }
+    .spinner_btn{
+        width: 90px;
+        height:90px;
+        font-size:32px;
+    }
+    /* Food Card Area End */
+
+    /* Footer Area Start */
+    .contact__content p, .about__content p{
+        font-size:16px;
+    }
+    .call{
+        margin-bottom: 6px;
+    }
+    .social__link{
+        margin-top: 48px;
+    }
+    .social__link ul li:not(:last-child){
+        margin-right: 40px;
+    }
+    /* Footer Area End */
+
+    /* Food Recipe Area Start*/
+    .food__recipe-wrapper{
+        -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    }
+    /* Food Recipe Area End*/
+
+    /* Food Recipe Area Start*/
+    .food__recipe-wrapper{
+        -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    }
+    /* Food Recipe Area End*/
+
+    /* Food Recipe Description Start*/
+    .ingredients__list h3 {
+        font-size:32px;
+    }
+    .ingredients__list ul li {
+        padding: 16px 20px 20px 24px;
+    }
+    .ingredients__list ul li p{
+        font-size:18px;
+    }
+    .recipe__description-wrapper .recipe__title{
+        max-width:100%;
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+    .recipe__description-wrapper .recipe__title h2 {
+        font-size:36px;
+        text-align: left;
+    }
+    .recipe__description-wrapper h3 {
+        font-size:32px;
+    }
+    .recipe__decription h4 {
+        font-size:24px;
+    }
+    .recipe__decription p {
+        font-size:18px;
+    }
+    .recipe__decription{
+        margin-bottom:48px;
+        padding-right: 0;
+    }
+    /* Food Recipe Description End*/
+
+
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+    body{
+        zoom: 85%;
+    }
+    .main__area-index{
+        background-position: 50% 0;
+    }
+    .main__area-recipe{
+        background-position: 8% 0;
+    }
+
+    /* Header Area Start */
+    .brand__logo img{
+        width:240px;
+    }
+    .main__menu ul .menu__item:not(:last-child){
+        margin-right: 24px;
+    }
+    .login__area{
+        margin-left: 72px;
+    }
+    .main__menu ul li a{
+        font-size:18px;
+    }
+    .sign__up-btn{
+        width: 132px;
+        font-size:16px;
+    }
+    .sign__up-btn img{
+        width:24px;
+    }
+    .sign__in-btn{
+        font-size:16px;
+    }
+    .sign__in-btn img{
+        width: 24px;
+    }
+    /* Header Area End */
+
+    /* Food Card Area Start */
+    .food__card-area .left__area{
+        width: 34%;
+        background: -webkit-gradient(linear, left top, right top, from(rgb(20 22 35 / 30%)), to(rgba(20, 22, 35, 0)));
+        background: -o-linear-gradient(left, rgb(20 22 35 / 30%) 0%, rgba(20, 22, 35, 0) 100%);
+        background: linear-gradient(90deg, rgb(20 22 35 / 30%) 0%, rgba(20, 22, 35, 0) 100%);
+    }
+    .food__card-area .right__area{
+        width: 34%;
+        background: -webkit-gradient(linear, left top, right top, from(rgba(20, 22, 35, 0.28)), to(rgba(20, 22, 35, 0)));
+        background: -o-linear-gradient(left, rgba(20, 22, 35, 0.28) 0%, rgba(20, 22, 35, 0) 100%);
+        background: linear-gradient(90deg, rgba(20, 22, 35, 0.28) 0%, rgba(20, 22, 35, 0) 100%);
+    }
+    .spinner__area{
+        padding-top: 32px;
+    }
+    .spinner_btn{
+        width: 90px;
+        height:90px;
+        font-size:32px;
+    }
+    /* Food Card Area End */
+
+    /* Footer Area Start */
+    .contact__content p, .about__content p{
+        font-size:16px;
+    }
+    .call{
+        margin-bottom: 6px;
+    }
+    .social__link{
+        margin-top: 48px;
+    }
+    .social__link ul li:not(:last-child){
+        margin-right: 40px;
+    }
+    /* Footer Area End */
+
+    /* Food Recipe Area Start*/
+
+    .recipe__description-wrapper .recipe__title {
+        max-width:65%;
+    }
+    .popover[data-popper-placement="top"] {
+        transform: translate3d(666px, 0px,0px)!important;
+    }
+    .popover[data-popper-placement="right"] {
+        top: 112px!important;
+    }
+    /* Food Recipe Area End*/
+
+}
+@media (min-width:1400px) and (max-width:1599px) {
+    body{
+        zoom:75%;
+    }
+    .main__area-index{
+        background-position: 50% 25%;
+    }
+
+    .popover[data-popper-placement="right"] {
+        top: 144px!important;
+    }
+    .footer__area {
+        padding-top: 72px;
+    }
+
+}
+@media (min-width:1600px) and (max-width:1799px) {
+    body{
+        zoom:75%;
+    }
+    .main__area-index{
+        background-position: 50% 25%;
+    }
+
+    .popover[data-popper-placement="right"] {
+        top: 144px!important;
+    }
+    .footer__area {
+        padding-top: 72px;
+    }
+    
+}
+@media (min-width:1800px) and (max-width:1919px) {
+    body{
+        zoom:85%;
+    }
+    .popover[data-popper-placement="right"] {
+        top: 150px!important;
+    }
+    .footer__area {
+        padding-top: 96px;
+    }
+}

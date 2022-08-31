@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wat Ga Ik Lunchen</title>
+
+    <!-- Favicon -->
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+    <!-- Bootstrap  CSS File-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--Theme CSS File-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Media CSS File-->
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+
+    <main class="main__area main__area-index">
+
+        <!-- Header Area Start -->
+        <header class="header__area">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg main__nav">
+                    <a class="navbar-brand brand__logo" href="./index.html">
+                        <img src="./images/logo.png" alt="foodation" class="img-fluid">
+                    </a>
+                    <button 
+                        class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#foodation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse main__menu" id="foodation">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item menu__item">
+                                <a class="nav-link active" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item menu__item">
+                                <a class="nav-link" href="/recipe.html">Recepten</a>
+                            </li>
+                            <li class="nav-item menu__item">
+                                <a class="nav-link" href="#about">Over ons</a>
+                            </li>
+                            <li class="nav-item menu__item">
+                                <a class="nav-link" href="#about">Contact</a>
+                            </li>
+                            <div class="login__area">
+                                <div class="login__area-wrapper">
+                                    <button class="btn sign__up-btn">
+                                        <img src="./images/sign-up.png" alt="foodation" class="img-fluid">
+                                        <span>Sign Up</span>
+                                    </button>
+                                    <button class="btn sign__in-btn">
+                                        <img src="./images/sign-in.png" alt="foodation" class="img-fluid">
+                                        <span>Login</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="notification__profile">
+                                <div class="notification__profile-wrapper">
+                                    <li class="nav-item dropdown notification__dropdown">
+                                        <a 
+                                            class="nav-link dropdown-toggle notification__dropdown-toggler" 
+                                            href="#" 
+                                            id="notificationDropdown" 
+                                            role="button" 
+                                            data-bs-toggle="dropdown" 
+                                            aria-expanded="false"
+                                        >
+                                            <img src="./images/notification.png" alt="foodation" class="img-fluid">
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="notificationDropdown">
+                                            <li>
+                                                <a href="">
+                                                    <p class="title">Payment Successful!</p>
+                                                    <p class="description">Payment for rice bowl is 
+                                                        successfuly paid.</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown profile__dropdown">
+                                        <a 
+                                            class="nav-link dropdown-toggle profile__dropdown-toggler" 
+                                            href="#" 
+                                            id="ProfileDropdown" 
+                                            role="button" 
+                                            data-bs-toggle="dropdown" 
+                                            aria-expanded="false"
+                                        >
+                                            <img src="./images/profile.png" alt="foodation" class="img-fluid">
+                                            <span>Annie Marie Neon</span>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="ProfileDropdown">
+                                            <li>
+                                                <a href="">
+                                                    <img src="./images/Setting.png" alt="foodation" class="img-fluid">
+                                                    <span>Settings</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img src="./images/Logout.png" alt="foodation" class="img-fluid">
+                                                    <span>Logout</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Header Area End -->
+        
+        <!-- Banner Area Start -->
+        
+        <section class="banner__area"> 
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-lg-5 col-xxl-4">
+                        <div class="banner__title">
+                            <h1>Het is tijd voor lunch!</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xxl-4">
+                        <div class="banner__img">
+                            <img src="./images/Front-Sandwich.png" alt="foodation" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-6 col-xxl-12">
+                        <div class="banner__content">
+                            <p>Spin om te kiezen wat je gaat lunchen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Area End -->
+
+        <!-- Food Card Area Start-->
+
+        <section class="food__card-area">
+            <div class="left__area">
+            </div>
+            <div class="right__area">
+            </div>
+            <div class="container">
+                <div class="food__card-wrapper">
+                    <!-- <div class="food__card">
+                        <div class="food__card-content">
+                            <img src="./images/Front-Sandwich.png" alt="foodation" class="img-fluid">
+                            <p>Spicy seasoned seafood noodles</p>
+                            <a href="./recipe-detail.html">How to make it</a>
+                        </div>
+                    </div>
+                    <div class="food__card">
+                        <div class="food__card-content">
+                            <img src="./images/Front-Sandwich.png" alt="foodation" class="img-fluid">
+                            <p>Salted Pasta with mushroom sauce</p>
+                            <a href="./recipe-detail.html">How to make it</a>
+                        </div>
+                    </div>
+                    <div class="food__card active">
+                        <div class="food__card-content">
+                            <img src="./images/Front-Sandwich.png" alt="foodation" class="img-fluid">
+                            <p>Beef dumpling in hot and sour soup</p>
+                            <a href="./recipe-detail.html">How to make it</a>
+                        </div>
+                    </div>
+                    <div class="food__card">
+                        <div class="food__card-content">
+                            <img src="./images/Front-Sandwich.png" alt="foodation" class="img-fluid">
+                            <p>Healthy noodle with spinach leaf</p>
+                            <a href="./recipe-detail.html">How to make it</a>
+                        </div>
+                    </div>
+                    <div class="food__card">
+                        <div class="food__card-content">
+                            <img src="./images/Front-Sandwich.png" alt="foodation" class="img-fluid">
+                            <p>Spicy instant noodle with special omelette</p>
+                            <a href="./recipe-detail.html">How to make it</a>
+                        </div>
+                    </div> -->
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Spinner Area -->
+
+        <section class="spinner__area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="spinner__wrapper">
+                            <button class="btn spinner_btn">Spin</button>
+                            <button class="btn" id="custom__popover" data-bs-toggle="popover" >
+                                <img src="./images/Filter.png" alt="">
+                            </button>
+
+                            <div hidden>
+                                <div data-name="popover-content">
+                                    <div class="popover__content-wrapper">
+                                        <div class="popover__left-content">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="vegeterian">
+                                                <label class="form-check-label" for="vegeterian">
+                                                    Vegetarisch
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="gluten-free">
+                                                <label class="form-check-label" for="gluten-free">
+                                                    Glutenvrij
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="popover__right-content">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="steak-only">
+                                                <label class="form-check-label" for="steak-only">
+                                                    Lactosevrij
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="drinks">
+                                                <label class="form-check-label" for="drinks">
+                                                    Vegan
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Card Area End -->
+
+        <!-- Footer Area Start-->
+
+        <footer class="footer__area" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-7 col-xl-8">
+                        <div class="about__content">
+                            <h3>About Us</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sagittis consequat ultrices nunc facilisi eget maecenas
+                                Sed vulputate enim viverra donec diam pellentesque.
+                                Massa eget mattis adipiscing ornare ut eu enim accumsan.
+                                Posuere faucibus rutrum iaculis ipsum iaculis tincidunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5 col-xl-4">
+                        <div class="contact__content">
+                            <h3>Contact Us</h3>
+                            <div class="email">
+                                <p>Email</p>
+                                <p>contact@watgaiklunchen.nl</p>
+                            </div>
+                            <div class="social__link">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="">
+                                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 2.5C10.3359 2.5 2.5 10.3359 2.5 20C2.5 29.6641 10.3359 37.5 20 37.5C29.6641 37.5 37.5 29.6641 37.5 20C37.5 10.3359 29.6641 2.5 20 2.5ZM28.4102 15.6914C28.4219 15.875 28.4219 16.0664 28.4219 16.2539C28.4219 21.9883 24.0547 28.5938 16.0742 28.5938C13.6133 28.5938 11.332 27.8789 9.41016 26.6484C9.76172 26.6875 10.0977 26.7031 10.457 26.7031C12.4883 26.7031 14.3555 26.0156 15.8438 24.8516C13.9375 24.8125 12.3359 23.5625 11.7891 21.8438C12.457 21.9414 13.0586 21.9414 13.7461 21.7656C12.7646 21.5662 11.8823 21.0331 11.2493 20.257C10.6162 19.4808 10.2714 18.5094 10.2734 17.5078V17.4531C10.8477 17.7773 11.5234 17.9766 12.2305 18.0039C11.6361 17.6078 11.1487 17.0711 10.8114 16.4415C10.4741 15.8119 10.2974 15.1088 10.2969 14.3945C10.2969 13.5859 10.5078 12.8477 10.8867 12.207C11.9762 13.5482 13.3357 14.6451 14.8768 15.4264C16.418 16.2078 18.1063 16.6561 19.832 16.7422C19.2188 13.793 21.4219 11.4062 24.0703 11.4062C25.3203 11.4062 26.4453 11.9297 27.2383 12.7734C28.2188 12.5898 29.1562 12.2227 29.9922 11.7305C29.668 12.7344 28.9883 13.582 28.0859 14.1172C28.9609 14.0234 29.8047 13.7812 30.5859 13.4414C29.9961 14.3086 29.2578 15.0781 28.4102 15.6914Z" fill="black"/>
+                                            </svg>
+                                                
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://www.instagram.com/watgaiklunchen">
+                                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.9999 14.7929C17.1328 14.7929 14.7929 17.1328 14.7929 19.9999C14.7929 22.8671 17.1328 25.207 19.9999 25.207C22.8671 25.207 25.207 22.8671 25.207 19.9999C25.207 17.1328 22.8671 14.7929 19.9999 14.7929ZM35.6171 19.9999C35.6171 17.8437 35.6367 15.707 35.5156 13.5546C35.3945 11.0546 34.8242 8.83588 32.996 7.00775C31.164 5.17572 28.9492 4.60932 26.4492 4.48822C24.2929 4.36713 22.1562 4.38666 20.0038 4.38666C17.8476 4.38666 15.7109 4.36713 13.5585 4.48822C11.0585 4.60932 8.83979 5.17963 7.01166 7.00775C5.17963 8.83978 4.61322 11.0546 4.49213 13.5546C4.37103 15.7109 4.39057 17.8476 4.39057 19.9999C4.39057 22.1523 4.37103 24.2929 4.49213 26.4453C4.61322 28.9453 5.18353 31.164 7.01166 32.9921C8.84369 34.8242 11.0585 35.3906 13.5585 35.5117C15.7148 35.6328 17.8515 35.6132 20.0038 35.6132C22.1601 35.6132 24.2968 35.6328 26.4492 35.5117C28.9492 35.3906 31.1679 34.8203 32.996 32.9921C34.8281 31.1601 35.3945 28.9453 35.5156 26.4453C35.6406 24.2929 35.6171 22.1562 35.6171 19.9999ZM19.9999 28.0117C15.5663 28.0117 11.9882 24.4335 11.9882 19.9999C11.9882 15.5663 15.5663 11.9882 19.9999 11.9882C24.4335 11.9882 28.0117 15.5663 28.0117 19.9999C28.0117 24.4335 24.4335 28.0117 19.9999 28.0117ZM28.3398 13.5312C27.3046 13.5312 26.4687 12.6953 26.4687 11.6601C26.4687 10.6249 27.3046 9.789 28.3398 9.789C29.3749 9.789 30.2109 10.6249 30.2109 11.6601C30.2112 11.9059 30.163 12.1493 30.0691 12.3765C29.9752 12.6036 29.8373 12.81 29.6635 12.9838C29.4897 13.1577 29.2833 13.2955 29.0562 13.3894C28.829 13.4833 28.5856 13.5315 28.3398 13.5312Z" fill="black"/>
+                                            </svg>
+                                                
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">
+                                            <svg width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20.1117C0 30.055 7.22167 38.3233 16.6667 40V25.555H11.6667V20H16.6667V15.555C16.6667 10.555 19.8883 7.77833 24.445 7.77833C25.8883 7.77833 27.445 8 28.8883 8.22167V13.3333H26.3333C23.8883 13.3333 23.3333 14.555 23.3333 16.1117V20H28.6667L27.7783 25.555H23.3333V40C32.7783 38.3233 40 30.0567 40 20.1117C40 9.05 31 0 20 0C9 0 0 9.05 0 20.1117Z" fill="black"/>
+                                            </svg>                                                
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Footer Area Start-->
+
+    </main>
+
+    <!--Script Files-->
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
