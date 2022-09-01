@@ -112,7 +112,7 @@
     .food__card-area .right__area{
         width:0%;
     }
-    .food__card-wrapper .food__card:not(:nth-child(3)){
+    .food__card-wrapper .food__card:not(.food__card.active){
         display: none;
     }
     /* Food Card Area End */

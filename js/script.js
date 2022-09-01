@@ -12,94 +12,94 @@ $(document).ready(function() {
 let cat1 = [
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Spicy1 seasoned seafood noodles",   
+        "text" : "vegeterian: Spicy seasoned seafood noodles",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Salted1 Pasta with mushroom sauce",   
+        "text" : "vegeterian: Salted Pasta with mushroom sauce",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Beef1 dumpling in hot and sour soup",   
+        "text" : "vegeterian: Beef dumpling in hot and sour soup",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Healthy1 noodle with spinach leaf",   
+        "text" : "vegeterian: Healthy noodle with spinach leaf",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Spicy1 instant noodle with special omelette",   
+        "text" : "vegeterian: Spicy instant noodle with special omelette",   
     },
 ]
 let cat2 = [
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Spicy2 seasoned seafood noodles",   
+        "text" : "gluten-free: Spicy seasoned seafood noodles",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Salted2 Pasta with mushroom sauce",   
+        "text" : "gluten-free: Salted Pasta with mushroom sauce",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Beef2 dumpling in hot and sour soup",   
+        "text" : "gluten-free: Beef dumpling in hot and sour soup",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Healthy2 noodle with spinach leaf",   
+        "text" : "gluten-free: Healthy noodle with spinach leaf",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Spicy2 instant noodle with special omelette",   
+        "text" : "gluten-free: Spicy instant noodle with special omelette",   
     },
 ]
 let cat3 = [
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Spicy3 seasoned seafood noodles",   
+        "text" : "steak-only: Spicy seasoned seafood noodles",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Salted3 Pasta with mushroom sauce",   
+        "text" : "steak-only: Salted Pasta with mushroom sauce",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Beef3 dumpling in hot and sour soup",   
+        "text" : "steak-only: Beef dumpling in hot and sour soup",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Healthy3 noodle with spinach leaf",   
+        "text" : "steak-only: Healthy noodle with spinach leaf",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Spicy3 instant noodle with special omelette",   
+        "text" : "steak-only: Spicy instant noodle with special omelette",   
     },
 ]
 let cat4 = [
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Spicy4 seasoned seafood noodles",   
+        "text" : "drinks: Spicy seasoned seafood noodles",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Salted4 Pasta with mushroom sauce",   
+        "text" : "drinks: Salted Pasta with mushroom sauce",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Beef4 dumpling in hot and sour soup",   
+        "text" : "drinks: Beef dumpling in hot and sour soup",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Healthy4 noodle with spinach leaf",   
+        "text" : "drinks: Healthy noodle with spinach leaf",   
     },
     {
         "path" : "./images/Front-Sandwich.png",
-        "text" : "Spicy4 instant noodle with special omelette",   
+        "text" : "drinks: Spicy instant noodle with special omelette",   
     },
 ]
 let recipes = [];
 // recipes.push(cat1,cat2)
-console.log(recipes)
+// console.log(recipes)
 let allCheckBoxes = document.querySelectorAll('.form-check-input');
 let checkbox1 = document.querySelector('#vegeterian');
 let checkbox2 = document.querySelector('#gluten-free');
@@ -118,12 +118,12 @@ let checkbox4 = document.querySelector('#drinks');
 
 checkbox1.addEventListener('click',()=>{
     if(checkbox1.checked == true){
-        console.log("checkbox1 checked");
+        // console.log("checkbox1 checked");
         recipes.push(cat1)
-        console.log(recipes);
+        // console.log(recipes);
     }
     else{        
-        console.log("checkbox1 unchecked");
+        // console.log("checkbox1 unchecked");
         // remove when checkbox is unchecked
         let cat1Index = recipes.indexOf(cat1);
         if (cat1Index > -1) { // only splice array when item is found
@@ -133,12 +133,12 @@ checkbox1.addEventListener('click',()=>{
 })
 checkbox2.addEventListener('click',()=>{
     if(checkbox2.checked == true){
-        console.log("checkbox2 checked");
+        // console.log("checkbox2 checked");
         recipes.push(cat2)
-        console.log(recipes);
+        // console.log(recipes);
     }
     else{        
-        console.log("checkbox2 unchecked");
+        // console.log("checkbox2 unchecked");
         // remove when checkbox is unchecked
         let cat2Index = recipes.indexOf(cat2);
         if (cat2Index > -1) { // only splice array when item is found
@@ -148,12 +148,12 @@ checkbox2.addEventListener('click',()=>{
 })
 checkbox3.addEventListener('click',()=>{
     if(checkbox3.checked == true){
-        console.log("checkbox3 checked");
+        // console.log("checkbox3 checked");
         recipes.push(cat3)
-        console.log(recipes);
+        // console.log(recipes);
     }
     else{        
-        console.log("checkbox3 unchecked");
+        // console.log("checkbox3 unchecked");
         // remove when checkbox is unchecked
         let cat3Index = recipes.indexOf(cat3);
         if (cat3Index > -1) { // only splice array when item is found
@@ -163,12 +163,12 @@ checkbox3.addEventListener('click',()=>{
 })
 checkbox4.addEventListener('click',()=>{
     if(checkbox4.checked == true){
-        console.log("checkbox4 checked");
+        // console.log("checkbox4 checked");
         recipes.push(cat4)
-        console.log(recipes);
+        // console.log(recipes);
     }
     else{        
-        console.log("checkbox4 unchecked");
+        // console.log("checkbox4 unchecked");
         // remove when checkbox is unchecked
         let cat4Index = recipes.indexOf(cat4);
         if (cat4Index > -1) { // only splice array when item is found
@@ -178,22 +178,102 @@ checkbox4.addEventListener('click',()=>{
 })
 
 // showing recipies 
+let categoryCount;
 allCheckBoxes.forEach(checkbox=>{
     checkbox.addEventListener('click',()=>{   
         // reset
         let food__card_wrapper = document.querySelector('.food__card-wrapper');
         food__card_wrapper.innerHTML = '';     
+        categoryCount = $('.form-check-input:checked').length;
+        // console.log(r);
         let index;
-        for(index =  0; index<5; index++){
-            let food =  `<div class="food__card">
+        if(categoryCount > 0){
+
+            for(index =  0; index<5; index++){
+                var r = Math.floor(Math.random() * categoryCount);
+                let food =  `<div class="food__card">
             <div class="food__card-content">
-                <img src="${recipes[1][index]['path']}" alt="foodation" class="img-fluid">
-                <p> ${recipes[1][index]['text']} </p>
+                <img src="${recipes[r][index]['path']}" alt="foodation" class="img-fluid">
+                <p> ${recipes[r][index]['text']} </p>
+                <a href="./recipe-detail.html">How to make it</a>
+                </div>
+                </div>`
+                
+                food__card_wrapper.innerHTML += food;
+            }
+        }
+        else{
+            let food = `<div class="food__card">
+            <div class="food__card-content">
+                <img src="./images/Front-Sandwich.png" alt="foodation" class="img-fluid">
+                <p>Spicy seasoned seafood noodles</p>
                 <a href="./recipe-detail.html">How to make it</a>
             </div>
-            </div>`
-
-            food__card_wrapper.innerHTML += food;
+        </div>
+        <div class="food__card">
+            <div class="food__card-content">
+                <img src="./images/Front-Sandwich.png" alt="foodation" class="img-fluid">
+                <p>Salted Pasta with mushroom sauce</p>
+                <a href="./recipe-detail.html">How to make it</a>
+            </div>
+        </div>
+        <div class="food__card active">
+            <div class="food__card-content">
+                <img src="./images/Front-Sandwich.png" alt="foodation" class="img-fluid">
+                <p>Beef dumpling in hot and sour soup</p>
+                <a href="./recipe-detail.html">How to make it</a>
+            </div>
+        </div>
+        <div class="food__card">
+            <div class="food__card-content">
+                <img src="./images/Front-Sandwich.png" alt="foodation" class="img-fluid">
+                <p>Healthy noodle with spinach leaf</p>
+                <a href="./recipe-detail.html">How to make it</a>
+            </div>
+        </div>
+        <div class="food__card">
+            <div class="food__card-content">
+                <img src="./images/Front-Sandwich.png" alt="foodation" class="img-fluid">
+                <p>Spicy instant noodle with special omelette</p>
+                <a href="./recipe-detail.html">How to make it</a>
+            </div>
+        </div>`
+        food__card_wrapper.innerHTML += food;
         }
+        //  active class on every 3rd card
+        let food__card = document.querySelectorAll('.food__card');
+        // default active
+        food__card[2].classList.add('active');
     })
+})
+
+
+// work for shuffle cards
+let activeCardOrder;
+
+function shuffleCards(){
+    var arr = [];
+    while(arr.length < 5){
+        var r = Math.floor(Math.random() * 5) + 1;
+        if(arr.indexOf(r) === -1) arr.push(r);
+    }
+    console.log(arr);
+    let food__card = document.querySelectorAll('.food__card');
+    // default active
+    // food__card[2].classList.add('active');
+    
+    food__card.forEach(function (card,i){        
+        card.style.order = arr[i];                                   
+        console.log(arr[i]);        
+            if(card.style.order == 3){
+                card.style.order = activeCardOrder;
+                $('.food__card').removeClass('active');
+                card.classList.add('active');
+            }             
+    })  
+}
+
+let spinner_btn = document.querySelector('.spinner_btn');
+spinner_btn.addEventListener('click',()=>{    
+    shuffleCards()  
 })

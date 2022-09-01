@@ -272,6 +272,7 @@ button:focus{
 .food__card-area{
     margin-top: 130px;
     position: relative;
+    
 }
 
 .food__card-area .left__area{
@@ -329,8 +330,9 @@ button:focus{
 }
 .food__card.active{
     -webkit-transform:scale(1.2);
-        -ms-transform:scale(1.2);
-            transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    transform:scale(1.2);
+    transition: 1s all;
     top:-22px;
 }
 .food__card-content p{
