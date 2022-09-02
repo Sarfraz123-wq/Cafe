@@ -96,7 +96,14 @@
     }
     .banner__title h1{
         font-size:54px;
-        line-height: 72px;
+        /* line-height: 72px; */
+        line-height: 60px;
+    }
+    .banner__img{
+        text-align: center;
+    }
+    .banner__img img{
+        max-width: 250px;
     }
     .banner__content p{
         text-align:center;
@@ -112,8 +119,19 @@
     .food__card-area .right__area{
         width:0%;
     }
+    .food__card-wrapper{
+        display: grid;
+        gap: 90px;
+    }
     .food__card-wrapper .food__card:not(.food__card.active){
+        /* display: none; */
         display: none;
+        display: grid;
+    }
+    .food__card.active{
+        transform: scale(1);
+        top: 0;
+        transition: 0;
     }
     /* Food Card Area End */
     
