@@ -101,6 +101,7 @@
     }
     .banner__img{
         text-align: center;
+        display: none;
     }
     .banner__img img{
         max-width: 250px;
@@ -112,6 +113,9 @@
     /* Banner Area End */
 
     /* Food Card Area Start */
+    .food__card-area{
+        margin-top: 110px;
+    }
     .food__card-area .left__area{
         width:0%;
     }
@@ -126,7 +130,7 @@
     .food__card-wrapper .food__card:not(.food__card.active){
         /* display: none; */
         display: none;
-        display: grid;
+        /* display: grid; */
     }
     .food__card.active{
         transform: scale(1);
